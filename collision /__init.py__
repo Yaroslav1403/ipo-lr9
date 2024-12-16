@@ -1,1 +1,22 @@
+def isCorrectRect(rect):
+    if len(rect) != 2:
+        return False
 
+    bottom_left, top_right = rect
+
+    # Проверяем, что координаты являются числами
+    if not (isinstance(bottom_left, tuple) and isinstance(top_right, tuple)):
+        return False
+    
+    if len(bottom_left) != 2 or len(top_right) != 2:
+        return False
+
+    x1, y1 = bottom_left
+    x2, y2 = top_right
+
+    # Проверяем, что координаты корректны
+    return x1 < x2 and y1 < y2
+
+# Примеры использования
+print(isCorrectRect([(-3.4, 1), (9.2, 10)]))  #Вернет True
+print(isCorrectRect([(-7, 9), (3, 6)]))        #Вернет False
