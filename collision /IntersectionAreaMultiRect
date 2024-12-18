@@ -63,4 +63,3 @@ def intersectionAreaMultiRect(rectangles):
     
     #Возвращаем площадь найденного пересечения
     return area(current_intersection)  
-
