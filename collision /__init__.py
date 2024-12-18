@@ -1,6 +1,6 @@
 print("Пакет инициализации")
-from .CorrectRec import * 
-from .CollisionRect import *
-from .intersectAreaRect import *
-from .intersectAreaMultiRect import *
+from .IsCorrectRect import * 
+from .IsCollisionRect import *
+from .IntersectionAreaRect import *
+from .IntersectionAreaMultiRect import *
  
