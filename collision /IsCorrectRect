@@ -9,3 +9,4 @@ def isCorrectRect(rectangles):
     
     #Если все прямоугольники корректны, функция возвращает True
     return True
+ 
