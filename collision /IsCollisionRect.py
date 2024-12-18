@@ -1,15 +1,15 @@
 #Импорт функции isCorrectRect
-from isCorrectRect import isCorrectRect 
+from .IsCorrectRect import isCorrectRec
 
 #Определение собственного исключения
 class RectCorrectError(Exception):
     pass
 
 #Функция для проверки пересечения прямоугольников
-def isCollisionRect(rectangles):
+def isCollisionRec(rectangles):
     try:
         #Вызов функции isCorrectRect
-        isCorrectRect(rectangles)
+        isCorrectRec(rectangles)
     except ValueError as error:
         #Если возникла ошибка, выбрасываем RectCorrectError с сообщением
         raise RectCorrectError("1-ый прямоугольник некорректный") from error
