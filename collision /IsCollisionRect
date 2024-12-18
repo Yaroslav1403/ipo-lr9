@@ -47,3 +47,4 @@ def isCollisionRect(rectangles):
 
     #Если после проверки всех пар не было найдено ни одного пересечения, функция возвращает False
     return False
+ 
