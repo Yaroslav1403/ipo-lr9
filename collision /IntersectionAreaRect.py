@@ -1,14 +1,14 @@
 #Импорт функции isCorrectRect
-from isCorrectRect import isCorrectRect 
+from .IsCorrectRect import isCorrectRec 
 
-def intersectionAreaRect(rectangles):
+def intersectionAreaRec(rectangles):
     #Переменная для хранения общей площади пересечения
     total_area = 0  
     
     #Проверка корректности входных данных
     try:
         #Проверяем, корректны ли прямоугольники
-        isCorrectRect(rectangles)  
+        isCorrectRec(rectangles)  
     except ValueError as error:
         #Если возникла ошибка, выводим ее сообщение и вызываем новую ошибку с комментарием
         raise ValueError("Некорректный прямоугольник: " + str(error))  
