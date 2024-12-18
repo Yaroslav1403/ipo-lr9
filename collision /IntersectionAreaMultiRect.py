@@ -1,7 +1,7 @@
 #Импортируем функцию для проверки корректности прямоугольников
-from isCorrectRect import isCorrectRect  
+from .isCorrectRect import isCorrectRect  
 #Импортируем комбинации
-from itertools import combinations  
+from .itertools import combinations  
 
 #Определяем собственное исключение для обработки ошибок с некорректными прямоугольниками
 class RectCorrectError(Exception):
